@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Berlin Sans FB';
+}
+
+
+
+#navbar {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  height: 80px;
+  max-width: 100%;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Metal Mania';
+  margin-right: 40px;
+}
+
+#navbar a:hover {
+  
+  color: black;
+}
+footer {
+	background: -webkit-linear-gradient( #d3d3d3, white);
+    background: -moz-linear-gradient( #d3d3d3, white);
+}
+
+
+.content {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+#uvod {
+	font-style: italic;
+	text-align: center;
+	padding: 90px;
+	font-family: 'Metal Mania';
+	font-size: 20px;
+	background: -webkit-linear-gradient(bottom, #d3d3d3, white);
+    background: -moz-linear-gradient(bottom, #d3d3d3, white);
+}
+.hobi  {
+	font-size: 16px;
+}
+
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+    'header header header header header header' 
+    'left left left left left left' 
+    'middle middle middle middle middle middle' 
+    'right right right right right right' 
+    'footer footer footer footer footer footer';
+}
+

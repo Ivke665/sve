@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {
+	  font-family: "Harrington Regular";
+	}
+ /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+	  background-color: #66b032;
+	  }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: -45px;
+	  background-color: #ffffcc;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #66b032;
+      padding: 30px;
+	  margin-top: 10px;
+    }
+	#prijava {
+		margin-left: 450px;
+	}
+	/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 760px;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #66b032;
+    color: white;
+    padding: 7px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+	border-radius: 5px;   
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 10%;
+}
+
+.container1 {
+    padding: 10px;
+	width: 800px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 112px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: light yellow;
+    margin: 7% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 802px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+	
+</style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center" style="margin-top:-20px">
+    <h1>Online Organska Pijaca</h1>      
+    <p style="font-size:20px">Sva pitanja vezana za ponuđene oblike oglašavanja, cene, informativne ponude, alternativno / kreativno oglašavanje, ciljano
+	oglašavanje, performanse oglašavanje (CPC), post-analize oglasne kampanje, partnerske i medijske saradnje
+	i sl., ili ukoliko želite saznati kako Vam možemo pomoći pri ostvarivanju Vaših &#382;elja i ciljeva na OOP-a, slobodno
+	nam se obratite ovde ili putem emaila: Office@OOP-a.net</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="lif.gif" width="50px" height="50px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="OM2.html"><font color="white">Home</font></a></li>
+        <li><a href="#"><font color="white">Proizvodi</font></a></li>
+        <li><a href="forum.html"><font color="white">OOP-a Forum</font></a></li>
+        <li><a href="#"><font color="white">O nama</font></a></li>
+        <li><a href="kontakt.html"><font color="white">Kontakt</font></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		<!---------------------digme------------------>
+        <li>
+		<button onclick="document.getElementById('id01').style.display='block'" style="max-width:auto;">
+		<span class="glyphicon glyphicon-user" style="color:white"></span>&nbsp;Prijava</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" style="background-color:#ffffe0">
+    <div class="imgcontainer" style="background-color:#66b032;height:51px;margin-top:56px">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="lif.gif" alt="Avatar" class="avatar" style="margin-top:-26px">
+    </div>
+
+    <div class="container1">
+      <label><b>E-mail</b></label>
+      <input type="text" placeholder="E-mail" name="e-mail" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?<br></a>
+	  Not a member? <a href="OM2.html">Sign Up</a></span>
+    </div>
+  </form>
+</div>
+<!--------------ovde se zavrsava------------->
+		</li>
+		</li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" style="color:white"></span><font color="white">Korpa</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<!----------------W3 Icon Labels Input--------------->
+<center>
+<form action="/action_page.php" class="w3-container w3-card-4 w3-pale-yellow w3-text-light-green w3-margin w3-round" style="max-width:70%">
+<h2 class="w3-center">Kontakt</h2>
+ 
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="first" type="text" placeholder="Ime i prezime" style="color:black">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="email" type="text" placeholder="Email" style="color:black">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone" style="color:black">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+    <div class="w3-rest">
+      <textarea class="w3-input w3-border" name="message" type="text" placeholder="Message" style="color:black"></textarea>
+    </div>
+</div>
+
+<button class="w3-button w3-block w3-section w3-light-green w3-ripple w3-padding" style="width:100px"><font color="white">Send</font></button>
+</form>
+<!---------footer---------->
+<br>
+<div>
+<footer>
+  <center>
+  <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size:24px"></a></i>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:24px"></i>
+  </center>
+</footer>
+</div>
+</body>
+</html>
+</body>
+</html> 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {
+	  font-family: "Harrington Regular";
+	}
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+	  background-color: #66b032;
+	  }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: -45px;
+	  background-color: #ffffcc;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #66b032;
+      padding: 30px;
+    }
+	.sign {
+		text-align: center;
+		padding: 10px;
+	}
+	form {
+		margin-left: 10px;
+	}
+	
+	
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center" style="margin-top:-20px">
+    <h1>Online Organska Pijaca</h1>      
+    <p>Vrednost,Zdravlje,Priroda</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="lif.gif" width="50px" height="50px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="OM1.html"><font color="white">Home</font></a></li>
+        <li><a href="#"><font color="white">Proizvodi</font></a></li><!--------filter tabs u W3 how to------->
+        <li><a href="forum.html"><font color="white">OOP-a Forum</font></a></li>
+        <li><a href="#"><font color="white">O nama</font></a></li>
+        <li><a href="kontakt.html"><font color="white">Kontakt</font></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="prijava.html"><span class="glyphicon glyphicon-user" style="color:white"></span><font color="white">Prijava</font></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" style="color:white"></span><font color="white">Korpa</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!---------ovde upotrebi W3 modal Ligntning za slike---Kao i transparentni background za sliku sa tekstom u W3 How to------>
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Upoznajte sela i proizvodja&#269;e</div><!--------Profil Card za ovo--------->
+        <div class="panel-body"><img src="selo.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Vi&#353;e od 50 doma&#263;instva juga Srbije </div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading"> OOP-a Akcije</div><!----------Mozda upotrebis Alerts W3 How to---------->
+        <div class="panel-body"><img src="selo3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Naru&#269;ivanjem ostvarujete popuste</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Poru&#269;ite unapred</div>
+        <div class="panel-body"><img src="selo4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Ovim dobijate,kad dodje vreme,najsve&#382;iju hranu </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<!-------- drugi deo--------------->
+
+
+
+<div class="sign">
+  <p><b><h4>Pridru&#382;i se,odaberi,naru&#269;i</h4></b></p><!---------Ako ima jos nesto onda probaj Modal za otvaranje naloga How to Sign Up--->  
+  <form class="form-inline">
+     <p><input type="email" class="form-control" size="45" placeholder="Email Address">
+		<input type="name" class="form-control" size="45" placeholder="Ime i Prezime"></p>
+	 <p><input type="password" class="form-control" size="45" placeholder="Lozinka">
+		<input type="address" class="form-control" size="45" placeholder="Adresa"></p>
+	 <p><input type="password" class="form-control" size="45" placeholder="Potvrdi lozinku">
+		<input type="text" class="form-control" size="45" placeholder="Kontakt telefon"></p>
+    <button type="button" class="btn btn-danger">Sign Up</button>
+  </form>
+  </div>
+  <br>
+<!-----------footer------------>
+<footer>
+  <center>
+  <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size:24px"></a></i>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter w3-hover-opacity" style="font-size:24px"></i>
+  <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity" style="font-size:24px"></i>
+  </center>
+</footer>
+</body>
+</html>

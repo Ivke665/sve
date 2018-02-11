@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>Cardinal Point</title>
+<meta charset="UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+    height: 100%;
+	font-family: "Berlin Sans FB", sans-serif;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('omot.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+	img {
+	max-width: 100%;
+	}
+	table {
+	max-width: 500px;
+	}
+}
+.content {
+	position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+	padding: 5px;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+</style>
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="CP-2.html#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="CP-2.html#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="CP-2.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#merch" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#extras" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+</div>
+<!-------------paralax------------------>
+<div class="parallax"></div>
+<div class="content" style="height:600px">
+<p><center><img src="merch3.jpg" style="width:600px;height:350px"></img></p>
+<p>You can order merchendise in "Contact" section</p>
+<p><table style="width:50%">
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>On Stock</th>
+      </tr>
+    <tr>
+      <td>T-shirts:<br> black,white,grey</td>
+      <td>10 &euro;</td>
+      <td>for men L,XL<br>for women S,M</td>
+    </tr>
+    <tr>
+      <td>Badge</td>
+      <td>1.5 &euro;</td>
+      <td>black <br> white</td>
+    </tr>
+    <tr>
+      <td>Album "Spit on trust and reliance"<br>lyrics book+poster+sticker</td>
+      <td>60 &euro;</td>
+      <td>soon</td>
+    </tr>
+  </table></p>
